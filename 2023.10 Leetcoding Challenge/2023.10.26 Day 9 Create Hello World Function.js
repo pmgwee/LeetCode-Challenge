@@ -5,12 +5,11 @@ var createHelloWorld = function () {
 
     return function (...args) {
         if (createHelloWorld) {
-            return "Hello World"
+            return console.log("Hello World");
         }
     }
 };
 
-/**
- * const f = createHelloWorld();
- * f(); // "Hello World"
- */
+
+const f = createHelloWorld();
+f(["hello", 5, "Good"]); // "Hello World"
