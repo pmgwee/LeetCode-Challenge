@@ -2,7 +2,7 @@
  * @param {string} num
  * @return {string}
  */
-var largestOddNumber = function (num) {
+var largestOddNumber = (num) => {
     let store = "";
     let temp;
     for (let j = num.length - 1; j >= 0; j--) {
